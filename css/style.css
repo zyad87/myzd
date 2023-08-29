@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+body{
+    font-family: 'Changa', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+    display: rtl;
+}
+html {
+    direction: rtl;
+  }
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main>section{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+#header{
+    background-color:rgb(41, 41, 41);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-bottom: 4px solid royalblue;
+    padding: 0px 120px;
+}
+#branding h1{
+    font-size: 28px;
+}
+nav>ul{
+    margin-top: 0px;
+    list-style-type: none;
+}
+#header a{
+color:rgb(255, 255, 255);
+text-decoration: none;
+}
+nav>ul>li{
+    float: right;
+    margin-left: 15px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(0, 136, 254);
+}
+a:hover{
+    color: rgb(130, 130, 130);
+}
+li{
+    transition:padding 1s,border 3s ;
+}
+li:hover{
+
+padding: 6;
+border: 2px solid black;
+border-radius:5px ;
+
+background-color: #1900ff;
+}
+#header .highlight, #header .current a{
+    color:royalblue;
+}
+#showcase{
+    min-height: 400px;
+    background: url("https://englishlive.ef.com/ar-sa/blog/wp-content/uploads/sites/13/2018/08/technology.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #fff; 
+}
+#showcase h1{
+margin-top: 100px;
+font-size: 55px;
+margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+    }
+
+#newsletter{
+    padding: 15px 120px;
+    color: #fff;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#newsletter h1{
+float: right;
+}
+#newsletter form{
+    float: left;
+    margin-top: 15px;
+    display:flex ;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    }
+#newsletter input[type="email"]{
+    padding: 18px;
+    height: 25px;
+    width: 250px;
+
+}
+.button{
+    height: 38px;
+    background:royalblue;
+    border: 1px solid #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(41, 41, 41);
+}
+
+#boxes{
+    margin-top: 20px;
+    padding: 60px 120px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#boxes{
+    flex-direction:column ;
+}
+
+#boxes .box{
+    text-align: center;
+    margin-left: 10px;
+}
+@media(max-width:1020px){
+    #boxes{
+        flex-direction: column;
+    }
+}
+
+#footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: royalblue;
+    text-align: center;
+}
